@@ -1,0 +1,81 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Admin Login
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+  <div class="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
+   <div class="flex justify-center mb-6">
+    <img alt="Admin panel logo, a shield with a key symbol in blue and white" class="w-24 h-24" height="100" src="images/LOGO.png" width="100"/>
+   </div>
+   <h1 class="text-2xl font-semibold text-c enter text-gray-800 mb-8">
+    Admin Login
+   </h1>
+   <form action="admin branda.html" class="space-y-6" method="admin branda" novalidate="">
+    <div>
+     <label class="block text-sm font-medium text-gray-700 mb-1" for="admin">
+      Username
+     </label>
+     <div class="relative">
+      <input class="block w-full rounded-md border border-gray-300 px-4 py-3 pr-12 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500" id="username" name="admin" placeholder="adminuser" required="" type="text"/>
+      <span class="absolute inset-y-0 right-3 flex items-center text-gray-400">
+       <i class="fas fa-user">
+       </i>
+      </span>
+     </div>
+    </div>
+    <div>
+     <label class="block text-sm font-medium text-gray-700 mb-1" for="12345">
+      Password
+     </label>
+     <div class="relative">
+      <input class="block w-full rounded-md border border-gray-300 px-4 py-3 pr-12 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+      <span class="absolute inset-y-0 right-3 flex items-center text-gray-400 cursor-pointer" id="togglePassword">
+       <i class="fas fa-eye">
+       </i>
+      </span>
+     </div>
+    </div>
+    <div class="flex items-center justify-between">
+     <label class="flex items-center text-sm text-gray-600">
+      <input class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" name="remember" type="checkbox"/>
+      <span class="ml-2">
+       Remember me
+      </span>
+     </label>
+     <a class="text-sm text-blue-600 hover:underline" href="#">
+      Forgot password?
+     </a>
+    </div>
+    <button class="w-full bg-blue-600 text-white py-3 rounded-md text-lg font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1" type="submit">
+     Sign In
+    </button>
+   </form>
+   <p class="mt-6 text-center text-sm text-gray-500">
+    © 2024 Admin Panel. All rights reserved.
+   </p>
+  </div>
+  <script>
+   const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+
+    togglePassword.addEventListener('click', () => {
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', type);
+      togglePassword.innerHTML = type === 'password' ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+    });
+  </script>
+ </body>
+</html>

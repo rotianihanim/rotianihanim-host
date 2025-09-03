@@ -1,0 +1,126 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Toko Roti Anihanim - Profil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-md z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+     
+     <!-- Logo -->
+     <a class="text-2xl font-bold text-amber-500 tracking-wide hover:text-amber-600 transition" href="#">
+       ANI HANIM
+     </a>
+
+     
+     <div class="flex items-center space-x-8">
+       <!-- Link Navigasi -->
+       <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+         <li><a class="hover:text-amber-500 transition" href="admin branda.html">Beranda</a></li>
+         <li><a class="hover:text-amber-500 transition" href="admin produk.html">Produk</a></li>
+         <li><a class="hover:text-amber-500 transition" href="admin cabang.html">Cabang</a></li>
+         <li><a class="hover:text-amber-500 transition" href="admin kontak.html">Kontak</a></li>
+       </ul>
+
+       <!-- Icon User -->
+       <div class="user_option">
+         <a href="login.html" class="user_link text-gray-700 hover:text-amber-500">
+           <i class="fa fa-user" aria-hidden="true"></i>
+         </a>
+       </div>
+
+       <!-- Mobile menu button -->
+       <button class="md:hidden focus:outline-none text-amber-500" id="menu-btn">
+         <i class="fas fa-bars fa-lg"></i>
+       </button>
+     </div>
+   </div>
+
+   <!-- Mobile menu -->
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 px-6 py-4 text-gray-700 font-semibold">
+     <li><a class="block hover:text-amber-500 transition" href="admin branda.html">Beranda</a></li>
+     <li><a class="block hover:text-amber-500 transition" href="admin produk.html">Produk</a></li>
+     <li><a class="block hover:text-amber-500 transition" href="admin cabang.html">Cabang</a></li>
+     <li><a class="block hover:text-amber-500 transition" href="admin kontak.html">Kontak</a></li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-amber-300 to-amber-100" id="home">
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2 fade-in">
+     <h1 class="text-4xl md:text-5xl font-extrabold text-amber-700 leading-tight mb-6">
+      Selamat Datang di Toko Roti Anihanim
+     </h1>
+     <p class="text-lg text-amber-900 mb-8">
+      Menyajikan roti dan kue berkualitas dengan cita rasa tradisional dan inovasi modern. Nikmati kelezatan yang dibuat dengan cinta dan bahan terbaik.
+     </p>
+     <a class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition" href="produk.html">
+      Lihat Produk Kami
+     </a>
+    </div>
+    <div class="md:w-1/2 fade-in">
+     <img alt="Fresh breads and pastries arranged beautifully on a wooden table with warm natural lighting" class="rounded-lg shadow-lg mx-auto" height="400" loading="lazy" src="images/LOGO.png" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Sejarah Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="sejarah">
+   <h2 class="text-3xl font-bold text-amber-600 mb-8 text-center slide-up">
+    Sejarah Toko Roti Anihanim
+   </h2>
+   <div class="flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2 slide-up">
+     <img alt="Old bakery shop front with vintage signage and warm inviting atmosphere" class="rounded-lg shadow-lg mx-auto" height="400" loading="lazy" src="images/tsejarah ungkal.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2 text-gray-700 slide-up">
+     <p class="mb-4 text-lg leading-relaxed">
+      Toko Roti Anihanim berdiri sejak tahun 1985, dimulai dari sebuah toko kecil di pusat kota yang hanya menjual beberapa jenis roti tradisional. Dengan dedikasi dan cinta terhadap kualitas, toko ini berkembang pesat dan menjadi salah satu toko roti terkemuka di wilayah ini.
+     </p>
+     <p class="mb-4 text-lg leading-relaxed">
+      Kami selalu mengutamakan bahan-bahan alami dan resep turun-temurun yang diwariskan dari generasi ke generasi, sehingga setiap produk kami memiliki cita rasa yang autentik dan memuaskan pelanggan setia kami.
+     </p>t-lg leading-relaxed">
+      Kini, Toko Roti Anihanim hadir dengan berbagai inovasi produk dan cabang yang tersebar di beberapa kota, tetap menjaga kualitas dan kehangatan pelayanan seperti saat pertama kali berdiri.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-amber-600 text-amber-100 py-8 mt-12">
+   <div class="max-w-7xl mx-auto px-6 text-center">
+    <p>
+     © 2024 Toko Roti Anihanim. Semua hak cipta dilindungi.
+    </p>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+          }
+        }
+      });
+    });
+  </script>
+ </body>
+     <p class="tex
+</html>
